@@ -1,0 +1,42 @@
+/*
+直接递归
+*/
+
+public class Solution {
+    public double myPow(double x, int n) {
+        if n==0 {
+            return 1;
+        }
+        if n <0 {
+            return 1 / myPow (x, -n);
+        }
+        if n>0 {
+            return x*myPow (x, n-1)
+        }
+    }
+}
+
+/*
+二分法
+*/
+public class Solution {
+    public double myPow(double x, int n) {
+        if n==0 {
+            return 1;
+        }
+        if n >0{
+            public double half (x, n/2) {
+                if n%2 = 0 {
+                    return half*half;
+                }
+                else {
+                    return half*half*x;
+                }
+            
+        }
+        }
+        if n < 1 {
+            return 1 / myPow(x, -n);
+        }
+        
+}
