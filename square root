@@ -6,7 +6,7 @@ public class Solution {
     public int mySqrt(int x) {
         long long int begin = 0;   
         long long int end = x/2 +1;
-        long long int mid = (begin + end) /2;
+        long long int mid = begin + (end - begin) /2; //不会溢出
         
         while (mid <= end){
             if (mid * mid > x) {
@@ -19,6 +19,6 @@ public class Solution {
                 mid = (mid + end)/2;
             }
         }
-        return 1;
+        return -1;
     }
 }
